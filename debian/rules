@@ -1,0 +1,34 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+export DH_GOPKG=github.com/cloudflare/cfssl
+export GOPATH=/tmp/cfssl-build-gopath
+export PATH=${GOPATH}/bin:/usr/lib/go-1.20/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/bin/X11:/usr/local/go/bin/:/go/bin/
+
+%:
+	dh $@
+
+GOPKGDIR="${GOPATH}/src/${DH_GOPKG}"
+
+override_dh_auto_configure:
+	mkdir -p "${GOPATH}/src/$(dir ${DH_GOPKG})"
+	mkdir -p "${GOPATH}/bin"
+	ln -sf "${CURDIR}" "${GOPKGDIR}"
+	go get -d -v
+
+override_dh_auto_build:
+	mkdir -p usr/bin
+	go build -v -o usr/bin/ ./cmd/...
+
+override_dh_auto_test:
+	true
+
+override_dh_auto_clean:
+	rm -rf ${GOPATH}
+	rm -rf bin/
+
+# https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=933541
+override_dh_dwz:
+	dh_dwz || :

@@ -1,0 +1,142 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: cfssl
+Source: https://github.com/cloudflare/cfssl
+Files-Excluded: vendor/github.com/mattn/go-sqlite3/sqlite3-binding.*
+
+
+
+Files: *
+Copyright: 2014 Cloudflare
+License: BSD-2-clause
+
+Files:
+    vendor/google.golang.org/*
+    vendor/golang.org/x/*
+    vendor/github.com/golang/*
+    scan/crypto/*
+    transport/roots/system/*
+    vendor/github.com/google/certificate-transparency-go/asn1/*
+    vendor/github.com/google/certificate-transparency-go/x509/*
+    vendor/github.com/zmap/zcrypto/cryptobyte/asn1.go
+    vendor/github.com/zmap/zcrypto/cryptobyte/asn1/asn1.go
+    vendor/github.com/zmap/zcrypto/dsa/dsa.go
+    vendor/github.com/zmap/zcrypto/encoding/asn1/asn1.go
+    vendor/github.com/zmap/zcrypto/encoding/asn1/common.go
+    vendor/github.com/zmap/zcrypto/encoding/asn1/marshal.go
+    vendor/github.com/zmap/zcrypto/internal/randutil/randutil.go
+    vendor/github.com/zmap/zcrypto/x509/*
+Copyright: 2009-2023 The Go Authors
+License: Go
+
+Files:
+    testdata/roots/httplib2_cacerts.txt
+Copyright: 1994-2000 Netscape Communications Corporation
+License: MPL
+
+Files:
+    vendor/github.com/beorn7/perks/*
+Copyright: 2013 Blake Mizerany
+License: Expat
+
+Files:
+    vendor/github.com/beorn7/perks/*
+Copyright: 2016 Caleb Spare
+License: Expat
+
+Files:
+    vendor/github.com/getsentry/sentry-go/*
+Copyright: 2019 Sentry (https://sentry.io) and individual contributors
+License: Expat
+
+Files:
+    vendor/github.com/go-logr/logr/*
+Copyright: 2020 The logr Authors
+License: Apache
+
+Files:
+    vendor/github.com/go-sql-driver/mysql/*
+Copyright: 2018-2022 The Go-MySQL-Driver Authors
+License: MPL
+
+Files:
+    vendor/github.com/google/certificate-transparency-go/*
+    vendor/github.com/kylelemons/go-gypsy/*
+Copyright: 2013-2017 Google LLC
+License: Apache
+
+Files:
+    vendor/github.com/jmhodges/clock/*
+Copyright: 2014 Jeff Hodges
+License: Expat
+
+Files:
+    vendor/github.com/jmoiron/sqlx/*
+Copyright: 2013 Jason Moison
+License: Expat
+
+Files:
+    vendor/github.com/kisielk/sqlstruct/*
+Copyright: 2012 Kamil Kisiel
+License: Expat
+
+Files:
+    vendor/github.com/lib/pq/*
+Copyright: 2011-2013 'pq' Contributors
+License: Expat
+
+Files:
+    vendor/github.com/lib/pq/scram/*
+Copyright: 2014 Gustavo Niemeyer
+License: BSD-2-clause
+
+
+Files:
+    vendor/github.com/mattn/go-sqlite3/*
+Copyright: 2014 Yasuhiro Matsumoto <mattn.jp@gmail.com>
+License: Expat
+
+Files: vendor/github.com/mattn/go-sqlite3/_example/mod_vtable/picojson.h
+Copyright: 2009-2010 Cybozu Labs, Inc.
+           2011 Kazuho Oku
+License: BSD-2-Clause
+
+Files: vendor/github.com/matttproud/golang_protobuf_extensions/*
+Copyright: 2012 Matt T. Proud
+License: Apache
+
+Files: vendor/github.com/pelletier/go-toml/*
+Copyright: 2013-2021 Thomas Pelletier, Eric Anderton
+License: Apache
+
+Files: vendor/github.com/prometheus/*
+Copyright: 2012-2021 The Prometheus Authors
+License: Apache
+
+Files: vendor/github.com/weppos/publicsuffix-go/*
+Copyright: 2016-2022 Simone Carletti
+License: Expat
+
+Files: vendor/github.com/ziutek/mymysql/*
+Copyright: 2010 Michal Derkacz
+License: BSD-3-clause
+
+Files: vendor/github.com/zmap/zcrypto/util/isURL.go
+Copyright: 2014 Alex Saskevich
+License: Expat
+
+Files: vendor/github.com/zmap/zcrypto/*
+Copyright: 2015 Regents of the University of Michigan
+License: Apache
+
+Files: vendor/github.com/zmap/zlint/*
+Copyright: 2023 Regents of the University of Michigan
+License: Apache
+
+Files: vendor/k8s.io/*
+Copyright: 2013-2022 The Kubernetes Authors
+License: Apache
+
+Files: whitelist/*
+Copyright: 2014 Kyle Isom
+License: Expat
+

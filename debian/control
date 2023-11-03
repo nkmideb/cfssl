@@ -1,0 +1,15 @@
+Source: cfssl
+Section: web
+Priority: optional
+Maintainer: Sorah Fukumori <her@sorah.jp>
+Build-Depends: debhelper-compat (= 12), dh-exec, git, golang-1.20, libsqlite3-dev, tzdata-legacy | tzdata
+Standards-Version: 3.9.4
+Homepage: https://github.com/cloudflare/cfssl
+Vcs-Git: https://github.com/nkmideb/cfssl
+Vcs-Browser: https://github.com/nkmideb/cfssl
+
+Package: cfssl
+Architecture: any
+Provides: golang-cfssl
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: CloudFlare's PKI and TLS toolkit
